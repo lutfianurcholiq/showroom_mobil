@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Mobil;
 use Illuminate\Http\Request;
 
-class KendaraanController extends Controller
+class MobilController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('admin.mobil.index', [
+            'title' => 'Mobil',
+            'mobil' => Mobil::all(),
+        ]);
     }
 
     /**

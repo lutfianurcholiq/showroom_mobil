@@ -24,10 +24,17 @@
 
       <li class="menu-header small text-uppercase"><span class="menu-header-text">Masters</span></li>
       
-      <li class="menu-item {{ Request::is('kendaraan') ? 'active' : '' }}">
-        <a href="/apply" class="menu-link">
+      <li class="menu-item {{ Request::is('mobil') ? 'active' : '' }}">
+        <a href="/mobil" class="menu-link">
           <i class="menu-icon tf-icons bx bx-car"></i>
-          <div data-i18n="Basic">Kendaraan</div>
+          <div data-i18n="Basic">Mobil</div>
+        </a>
+      </li>
+
+      <li class="menu-item {{ Request::is('jenis-mobil') ? 'active' : '' }}">
+        <a href="/jenis-mobil" class="menu-link">
+          <i class="menu-icon tf-icons bx bx-list-ul"></i>
+          <div data-i18n="Basic">Jenis Mobil</div>
         </a>
       </li>
       
@@ -36,7 +43,7 @@
       <li class="menu-item {{ Request::is('profile') ? 'active' : '' }}">
         <a href="/profile" class="menu-link">
           <i class="menu-icon tf-icons bx bx-user"></i>
-          <div data-i18n="Basic">Akun</div>
+          <div data-i18n="Basic">Profile</div>
         </a>
       </li>
     
